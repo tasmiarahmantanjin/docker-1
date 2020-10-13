@@ -1,0 +1,3 @@
+eval $(docker-machine env Char)
+
+#env to see the new environment
