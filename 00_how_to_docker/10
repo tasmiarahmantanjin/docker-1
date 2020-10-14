@@ -1,0 +1,3 @@
+docker volume create --name hatchery
+
+#Test: docker volume ls
