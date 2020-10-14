@@ -1,1 +1,3 @@
 docker pull hello-world
+
+#Test: docker image ls
