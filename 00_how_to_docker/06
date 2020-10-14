@@ -2,3 +2,5 @@
 #docker --name desired_container_name_for the image image_name (doceker --name overlord nginx)
 
 docker run --restart=always -d -p 5000:80 --name overlord --detach nginx
+
+#Test: go to brawser and type <ip_of_char_machine:5000>
