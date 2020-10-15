@@ -8,6 +8,5 @@ docker exec -e FLASK_APP=/root/app.py Abathur flask run --host=0.0.0.0 --port 30
 # docker exec command runs a new command in a running container
 # 3rd command python code
 # 4th command run the application using flask command. This command tells the terminal to work with by exporting the FLASK_APP environment variable.
-
 # we can check the output by 
 # curl $(docker-machine ip Char):3000
