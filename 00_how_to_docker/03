@@ -1,4 +1,4 @@
 eval $(docker-machine env Char)
 
 #env to see the new environment
-# Test: docker-machine ls
+#Test: docker-machine ls
