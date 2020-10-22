@@ -16,7 +16,7 @@ ONBUILD RUN rake db:seed
 
 
 # RUN & TEST
-
+# Go inside of the ft_rails (cd ft_rails)
 # git clone https://github.com/RailsApps/rails-signup-thankyou.git app
 # app folder shold be clone inside of the ft_rails folder
 # docker build -t ft-rails:on-build .
