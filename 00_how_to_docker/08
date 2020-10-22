@@ -1,4 +1,4 @@
 docker run -it --rm alpine /bin/sh
 
-#In case the container is already running: docker exec -it container_id_or_name ash
+# In case the container is already running: docker exec -it container_id_or_name ash
 # https://stackoverflow.com/questions/35689628/starting-a-shell-in-the-docker-alpine-container
