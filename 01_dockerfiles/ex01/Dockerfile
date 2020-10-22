@@ -1,7 +1,7 @@
 # Base system is Debian for TeamSpeak3
 FROM debian
 
-MAINTAINER trahman trahman.hive@gmial.com
+MAINTAINER trahman trahman.hive@gmail.com
 
 # accept server license
 ENV TS3SERVER_LICENSE=accept
