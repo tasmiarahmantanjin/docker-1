@@ -1,6 +1,6 @@
 FROM ruby:2.5.1
 
-MAINTAINER ismelich <ismelich@student.hive.fi>
+MAINTAINER trahman <trahman@gmail.com>
 
 RUN apt-get update && apt-get install -y nodejs
 RUN gem install rails --version 5.2.0
