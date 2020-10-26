@@ -18,3 +18,6 @@ RUN npm install yarn --global
 
 # How to run it?
 # docker run --rm -ti ex02
+
+# How to test it?
+# node -v && npm -v && yarn add node && npm install node
