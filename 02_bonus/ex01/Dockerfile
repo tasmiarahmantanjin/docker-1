@@ -2,7 +2,7 @@
 
 FROM debian
 
-MAINTAINER trahman.hive@gmail.com
+LABEL maintainer="trahman@student.hive.fi"
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential git
 
