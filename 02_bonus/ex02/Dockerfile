@@ -1,10 +1,17 @@
+#Building a NodeJS environment
+
 FROM ubuntu
 
-MAINTAINER trahman.hive@gmail.com
+LABEL maintainer="trahman@student.hive.fi"
+
+#ENV UBUNTU_FRONTEND=noninteractive 
+#ENV TZ=Europe/Helsinki
 
 RUN apt-get update && apt-get upgrade -y && \
+	apt-get install -y tzdata && \
 	apt-get install -y nodejs npm git build-essential vim
-RUN RUN npm install yarn --global && npm install npm --global
+RUN npm install npm --global
+RUN npm install yarn --global
 
 # How to build it?
 # docker build -t ex02 .
