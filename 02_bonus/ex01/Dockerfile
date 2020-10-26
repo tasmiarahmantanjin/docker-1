@@ -11,3 +11,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential v
 
 # How to run it?
 # docker run --rm -ti ex01
+
+#How to test it?
+# go inside a container and make a simple c file, compile and run it
