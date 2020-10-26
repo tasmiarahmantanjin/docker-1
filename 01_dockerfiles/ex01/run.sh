@@ -12,6 +12,6 @@ echo "Server is running."
 
 # HOW TO TEST IT?
 # After runnig the run.sh, server will run in the background
-# go to web-browser and type: ts3server://192.168.99.100:10011 (YOUR MACHINE IP)
-# docker logs my_teamspeck ::: TO CHECK TTHE TOKERN NUMBER
+# go to web-browser and type:>>> ts3server://192.168.99.100:10011 (YOUR MACHINE IP)
+# docker logs my_teamspeak :>>> TO CHECK TTHE TOKERN NUMBER
 # GO TO TS3 CLIENT AND USER CHAR IP AS A SERVER NAME AND TOKEN ID AS PASS
