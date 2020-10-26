@@ -2,7 +2,7 @@
 
 FROM debian
 
-MAINTAINER trahman <trahman.hive@gmail.com>
+LABEL maintainer="trahman@student.hive.fi"
 
 RUN apt-get update && apt-get install -y cowsay fortune lolcat
 
