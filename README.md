@@ -43,17 +43,115 @@
 	5. 42school/engineering-bay :->>> OC_USERNAME=root, OC_PASSWD=root
 
 
-## 01_dockerfile
+# 01_dockerfile
 
-### ex00
+## 💡 ***EX_00***
 
-### ex01
+### ⚡️ ***ANSWER***
+```
+FROM alpine:latest
 
-### ex02
+MAINTAINER trahman <trahman@gmail.com>
 
-### ex03
+RUN apk add --no-cache vim -f
 
-#### ANSWER
+CMD ["vim"]
+```
+
+### ⚡️ ***COMMAND FOR BUILDING AND RUN THE DOCKERFILE***
+```
+1. docker build -t ex00 .
+2. docker run --rm -ti ex00
+```
+
+### ⚡️ ***EXPLANATION***
+
+## 💡 ***EX_01***
+
+### ⚡️ ***ANSWER***
+```
+FROM debian
+
+MAINTAINER trahman <trahman.hive@gmail.com>
+
+ENV TS3SERVER_LICENSE=accept
+
+WORKDIR /home/teamspeak
+
+RUN apt-get update && \
+	apt-get upgrade -y && \
+	apt-get install -y wget bzip2 && \
+	wget http://dl.4players.de/ts/releases/3.12.1/teamspeak3-server_linux_amd64-3.12.1.tar.bz2 && \
+	tar -xvf teamspeak3-server_linux_amd64-3.12.1.tar.bz2
+
+EXPOSE 9987/udp 10011 30033
+
+WORKDIR teamspeak3-server_linux_amd64
+
+ENTRYPOINT sh ts3server_minimal_runscript.sh
+```
+### ⚡️ ***COMMAND FOR BUILDING AND RUN THE DOCKERFILE***
+```
+1. docker build -t ex01 .
+2. docker run -it -d --name my_teamspeak --rm -p 9987:9987/udp -p 10011:10011 -p 30033:30033 ex01
+```
+### ⚡️ ***EXPLANATION***
+
+
+## 💡 ***EX_02***
+
+### ⚡️ ***ANSWER***
+```
+FROM ruby:2.5.1
+
+MAINTAINER trahman <trahman@gmail.com>
+
+RUN apt-get update && apt-get install -y nodejs
+RUN gem install rails --version 5.2.0
+
+RUN mkdir -p /opt/app
+COPY app /opt/app
+
+ONBUILD WORKDIR /opt/app
+ONBUILD RUN bundle install
+ONBUILD RUN rake db:create
+ONBUILD RUN rake db:migrate
+ONBUILD RUN rake db:seed
+```
+
+### ⚡️ ***Scripts FOR BUILDING AND RUN THE DOCKERFILE***
+```
+#!/bin/sh
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+
+printf "${RED}TEST FOR EX02 OF DOCKERFILE\n";
+printf "${GREEN}Go inside of the ft_rails folder\n";
+cd ft-rails/
+
+printf "${RED}clone the ruby app\n";
+git clone https://github.com/RailsApps/rails-signup-thankyou.git app
+
+printf "${GREEN}build the ft-rails:on-build... inside of ft_rails folder\n";
+docker build -t ft-rails:on-build .
+
+printf "${RED}Go back to root directory\n";
+cd ..
+
+printf "${GREEN}Build the image\n";
+docker build -t ex02 .
+
+printf "${RED}Build completed. Now it's Running with the ID...\n";
+printf "${RED}Congratulations!!! go check: 192.168.99.100:3000\n";
+docker run -it --rm -p 3000:3000 ex02
+```
+### ⚡️ ***EXPLANATION***
+
+
+## 💡 ***EX_03***
+
+### ⚡️ ***ANSWER***
 ```
 FROM ubuntu:16.04
 
@@ -76,13 +174,18 @@ EXPOSE 443 80 22
 
 ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure && tail -f /dev/null
 ```
-#### COMMAND FOR BUILDING AND RUN THE DOCKERFILE:
+### ⚡️ ***Script FOR BUILDING AND RUN THE DOCKERFILE***
 ```
-1. docker build -t ex03 . &&
-2. docker run -it --shm-size=4g --rm -p 8080:80 -p 8022:22 -p 8443:443 --privileged ex03
+#!/bin/sh
+
+# How to build it?
+docker build -t ex03 .
+
+# How to run it?
+docker run -it --rm -p 8080:80 -p 8022:22 -p 8443:443 --privileged ex03
 ```
 
-#### HOW TO TEST IF THE EVERYTHING IS RIGHT OR NOT?
+### ⚡️ ***HOW TO TEST IF THE EVERYTHING IS RIGHT OR NOT?***
 ```
 1. Check the result in your web browser:
 2. http://192.168.99.100:8080 (VM IP, it can be different in everytime you start the VM)
@@ -95,7 +198,7 @@ ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure
 9. finally, you are able to push stuff in your repo
 ```
 
-#### EXPLANATION OF THE ANSWER
+### ⚡️ ***EXPLANATION OF THE ANSWER***
 
 ```
 # https://about.gitlab.com/install/
@@ -129,8 +232,7 @@ ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure
 5. --privileged (flag) We need rights to write to the docker container file system, with privileged we get that result.
 ```
 
-
-#### NOTES & TIPS:
+### ⚡️ ***NOTES & TIPS:***
 ```
 # If you doesn't add something like tail -f /dev/null as the last command, your GitLab will shut down. You need something to hang on your terminal.
 # And the last one tip. If you will see Whoops, GitLab is taking too much time to respond page, just wait and sometimes reload the page. 
