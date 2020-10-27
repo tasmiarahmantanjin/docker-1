@@ -2,3 +2,4 @@ docker service create -d --network overmind --name marines --replicas 2 -e OC_US
 
 # Test: docker service ls
 # Links: https://hub.docker.com/r/42school/marine-squad
+# docker service ps marines

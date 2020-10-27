@@ -1,1 +1,19 @@
 docker inspect -f '{{.Config.Env}}' spawning-pool
+
+#eval cmd: docker inspect -f '{{.HostConfig.RestartPolicy}}' spawning-pool
+#docker inspect spawning-pool
+#1. docker exec -it spawning-pool mysql -uroot -p
+#2. pass: Kerrigan
+#3. show databases;
+#4. use zerglings
+#6. CREATE TABLE Persons (
+    Personid int NOT NULL AUTO_INCREMENT,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (Personid)
+);
+#7. select *from Persons;
+#8. insert into Persons(LastName, FirstName, Age) values("Rahman", "Tasmia", 27);
+#9. select *from Persons;
+#10. describe Persons;

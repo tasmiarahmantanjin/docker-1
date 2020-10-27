@@ -1,1 +1,4 @@
 docker service ps marines
+
+#eval_cmd: docker service inspect -f "{{.Spec.TaskTemplate.ContainerSpec.Env}}" marines
+# docker service logs marines

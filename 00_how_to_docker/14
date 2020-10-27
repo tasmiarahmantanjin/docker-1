@@ -1,3 +1,4 @@
 docker run -d --name lair -p 8080:80 --link spawning-pool:mysql wordpress
 
-# Test: VM_IP_ADDR:8080 (run in the browser)
+# Test: 192.168.99.100:8080 (run in the browser)
+# user: root, pass: root

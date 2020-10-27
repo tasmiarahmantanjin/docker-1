@@ -1,3 +1,5 @@
 docker service create -d --network overmind --name engineering-bay --replicas 2 -e OC_USERNAME=root -e OC_PASSWD=root 42school/engineering-bay
 
 #resources: https://hub.docker.com/r/42school/engineering-bay/
+#eval_cmd:1. docker service ps engineering-bay
+#2. docker service inspect -f "{{.Spec.TaskTemplate.ContainerSpec.Env}}" engineering-bay
