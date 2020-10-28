@@ -1,5 +1,5 @@
 docker restart overlord
 
-#eval_cmd: 
+#Test_cmd:
 #1. docker exec -it overlord /bin/sh -c "kill 1"
 #2. docker inspect -f '{{.RestartCount}}' overlord
