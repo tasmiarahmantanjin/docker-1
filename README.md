@@ -26,7 +26,7 @@
 	7. docker restart Abathur
 	8. docker exec -e FLASK_APP=/root/app.py Abathur flask run --host=0.0.0.0 --port 3000
 
-## DEBUG
+## DEBUG (if deamon is not running)
 
 	1. If docker deamon is not connected
       	1. docker-machine regenerate-certs Char
