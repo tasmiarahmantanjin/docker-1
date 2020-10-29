@@ -3,6 +3,7 @@ docker exec Abathur pip install Flask
 echo 'from flask import Flask\napp = Flask(__name__)\n@app.route("/")\ndef hello_world():\n\treturn "<h1>Hello, World!</h1>"' > ~/app.py
 docker exec -e FLASK_APP=/root/app.py Abathur flask run --host=0.0.0.0 --port 3000
 
+# How to Test?
 # Run this file line by line(manually)
 # 1st command pull python container
 # docker exec command runs a new command in a running container
