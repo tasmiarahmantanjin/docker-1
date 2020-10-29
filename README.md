@@ -44,3 +44,4 @@ ln -s /goinfre/dmukaliy/.docker $HOME
 ### ***Notes***
 
 	1. You can find details explanation about the exercises as a comment inside of the solution files.
+	2. You can find all usefull links and chectseet from resources directory.
