@@ -1,4 +1,5 @@
 docker swarm init --advertise-addr $(docker-machine ip Char)
 
+# How to Test?
 # The --advertise-addr flag configures the manager node to publish its address as $(docker-machine ip Char)
-#eval_cmd: docker node ls
+# eval_cmd: docker node ls
