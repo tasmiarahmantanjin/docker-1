@@ -4,14 +4,14 @@
 
 ## ***Project description***
 
-[42 Project] - Last project of the 42 school's DevOps branch. The aim of the Docker-1 project is to make you handle docker and docker-machine and dockerfile, the bases to understand the idea of containerization of services. This project will allow you to deploy different apps, server & websites with dockerfile.
+[42 Project] - Last project of the 42 school's DevOps branch. The aim of the Docker-1 project is to make you handle docker and docker-machine and dockerfile, the bases to understand the idea of containerization of services. This project will allow you to deploy different apps, server & websites with dockerfile. You can get the subject in the root folder. Inside of the directory you can find the answers and expalnation about every exercise.
 
 Docker-1 project mainly consists of 3 different parts:
 1. 00_how_to_docker
 2. 01_dockerfile
 3. 02_bonus
 
-You can get the subject in the root folder. Inside of the directory you can find the answers and expalnation about every exercise.
+
 
 ### ***How to install docker in school MAC***
 
