@@ -1,7 +1,11 @@
 docker inspect -f '{{.Config.Env}}' spawning-pool
 
-#TEST: docker inspect -f '{{.HostConfig.RestartPolicy}}' spawning-pool
-#docker inspect spawning-pool
+# How to Test? 
+# docker inspect -f '{{.HostConfig.RestartPolicy}}' spawning-pool
+# docker inspect spawning-pool
+
+# How to add something in a dabase?
+
 #1. docker exec -it spawning-pool mysql -uroot -p
 #2. pass: Kerrigan
 #3. show databases;
