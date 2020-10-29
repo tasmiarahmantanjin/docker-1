@@ -1,9 +1,8 @@
 # Base system is Debian for TeamSpeak3
 FROM debian
 
-MAINTAINER trahman trahman.hive@gmail.com
+LABEL trahman="trahman@student.hive.fi"
 
-# accept server license
 ENV TS3SERVER_LICENSE=accept
 
 WORKDIR /home/teamspeak
@@ -19,9 +18,9 @@ RUN apt-get update && \
 	tar -xvf teamspeak3-server_linux_amd64-3.12.1.tar.bz2
 
 # Expose TeamSpeak3 used ports
-# "9987-9999:9987-9999/udp" # voice/virtual server UDP ports
-# "10011:10011" # query TCP port
-# "30033:30033" # file transfer TCP port
+# 9987-9999: voice/virtual server UDP ports
+# 10011: query TCP port
+# 30033: file transfer TCP port
 EXPOSE 9987/udp 10011 30033
 
 WORKDIR teamspeak3-server_linux_amd64
@@ -29,11 +28,9 @@ WORKDIR teamspeak3-server_linux_amd64
 ENTRYPOINT sh ts3server_minimal_runscript.sh
 
 # How to build it?
-
 # docker build -t ex01 .
 
 # How to run it?
-
 # docker run --rm -p 9987:9987/udp -p 10011:10011 -p 30033:30033 ex01
 # docker run -it --rm -p=9987:9987/udp -p=10011:10011 -p=30033:30033 ex01
 # dokcer logs my_teamspeak >>>>> to cchecck the admin pass
@@ -41,10 +38,9 @@ ENTRYPOINT sh ts3server_minimal_runscript.sh
 # How to TEST it???
 # Download teamspeak client from the webstore of school mac
 # Enter the "Char machine IP" as a server name
-# Enter the token==number as whole ass a passwork
-# Enter the token==number as a privilage key
+# Enter the "token==number" as whole ass a passwork
+# Enter the "token==number" as a privilage key
 # Congratulation it connected
-
 
 # Resources: 
 # https://docs.docker.com/samples/library/teamspeak/#container-shell-access

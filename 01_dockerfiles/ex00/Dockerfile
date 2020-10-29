@@ -4,7 +4,7 @@
 
 FROM alpine:latest
 
-MAINTAINER trahman <trahman@gmail.com>
+LABEL trahman="trahman@student.hive.fi"
 
 RUN apk add --no-cache vim -f
 
