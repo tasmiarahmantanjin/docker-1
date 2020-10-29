@@ -4,8 +4,7 @@
 
 ## ***Project description***
 
-[42 Project] - Last project of the 42 school's DevOps branch. The aim of the Docker-1 project is to make you handle docker and docker-machine and dockerfile, the bases to understand the idea of containerization of services. This project will allow you to deploy different apps, server & websites with dockerfile.
-
+[42 Project] - Last project of the 42 school's DevOps branch. The aim of the Docker-1 project is to make you handle docker and docker-machine and dockerfile, and give a overall idea about containerization. You can see the details about this project from [a link](https://github.com/tasmiarahmantanjin/docker-1/blob/main/resources/docker.en.pdf)
 Docker-1 project mainly consists of 3 different parts:
 1. 00_how_to_docker
 2. 01_dockerfile
