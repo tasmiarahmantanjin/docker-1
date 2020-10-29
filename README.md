@@ -4,7 +4,8 @@
 
 ## ***Project description***
 
-[42 Project] - Last project of the 42 school's DevOps branch. The aim of the Docker-1 project is to make you handle docker and docker-machine and dockerfile, and give a overall idea about containerization. You can see the details about this project from [here](https://github.com/tasmiarahmantanjin/docker-1/blob/main/resources/docker.en.pdf). 
+[42 Project] - Last project of the 42 school's DevOps branch. The aim of the Docker-1 project is to make you handle docker and docker-machine and dockerfile, and give a overall idea about containerization. You can see the details about this project from [here](https://github.com/tasmiarahmantanjin/docker-1/blob/main/resources/docker.en.pdf).
+
 Docker-1 project mainly consists of 3 different parts:
 1. 00_how_to_docker
 2. 01_dockerfile
@@ -42,5 +43,4 @@ ln -s /goinfre/dmukaliy/.docker $HOME
 
 ### ***Notes***
 
-	1. You can find details explanation about the exercises as a comment inside of exercise solution files
-	2. You can find the subject in the root of the repository.
+	1. You can find details explanation about the exercises as a comment inside of the solution files.
