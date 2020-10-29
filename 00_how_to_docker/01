@@ -1,4 +1,4 @@
 docker-machine create --driver virtualbox Char
 
-#docker-machine create --driver virtualbox --virtualbox-cpu-count 2 --virtualbox-memory "2048" TEST
-#docker-machine rm Machine_name(to delete a docker-machineVM)
+# docker-machine create --driver virtualbox --virtualbox-cpu-count 2 --virtualbox-memory "2048" TEST
+# docker-machine rm Machine_name (to delete a docker-machineVM)
