@@ -1,5 +1,8 @@
 docker run --restart=always -d -p 5000:80 --name overlord --detach nginx
 
-#How to Test: go to brawser and type <ipc>
-#docker pull nginx
-#docker --name desired_container_name_for the image image_name (doceker --name overlord nginx)
+# How to Test?
+# go to brawser and type <192.158.99.100:5000>
+
+# Notes:
+# docker pull nginx
+# docker --name desired_container_name_for the image image_name (doceker --name overlord nginx)
