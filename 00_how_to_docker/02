@@ -1,3 +1,4 @@
 docker-machine ip Char
 
-#how to check: docker-machine ls
+# How to Test?
+# docker-machine ls
