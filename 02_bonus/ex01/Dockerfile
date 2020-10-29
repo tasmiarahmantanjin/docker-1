@@ -2,7 +2,7 @@
 
 FROM debian
 
-LABEL maintainer="trahman@student.hive.fi"
+LABEL trahman="trahman@student.hive.fi"
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential vim git
 
@@ -12,5 +12,5 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential v
 # How to run it?
 # docker run --rm -ti ex01
 
-#How to test it?
+# How to test it?
 # go inside a container and make a simple c file, compile and run it

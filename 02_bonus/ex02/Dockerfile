@@ -2,7 +2,7 @@
 
 FROM ubuntu
 
-LABEL maintainer="trahman@student.hive.fi"
+LABEL trahman="trahman@student.hive.fi"
 
 #ENV UBUNTU_FRONTEND=noninteractive 
 #ENV TZ=Europe/Helsinki
