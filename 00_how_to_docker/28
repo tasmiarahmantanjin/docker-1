@@ -1,5 +1,6 @@
 docker service create -d --network overmind --name marines --replicas 2 -e OC_USERNAME=root -e OC_PASSWD=root 42school/marine-squad
 
-# Test: docker service ls
+# How to Test?
+# docker service ls
 # Links: https://hub.docker.com/r/42school/marine-squad
 # docker service ps marines

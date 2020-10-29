@@ -1,5 +1,6 @@
 docker service scale -d marines=20
 
-# TEST: How to check logs: docker service logs -f $(docker service ps marines -f "name=marines.11" -q)
+# How to Test?
+# How to check logs: docker service logs -f $(docker service ps marines -f "name=marines.11" -q)
 # Links: https://docs.docker.com/engine/reference/commandline/service_scale/
-#eval_cmd: docker service ps marines
+# docker service ps marines
