@@ -37,7 +37,7 @@ ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure
 #8. git clone http://192.168.99.100/root/test-repo.git (remember to use your ip in clone)
 #9. finally, you are able to push stuff in your repo
 
-# Explanation about Dockerfile
+# ⚡️ Explanation about Dockerfile
 
 # https://about.gitlab.com/install/
 # Without setting a terminal variable to the shell of your choice we get the 
@@ -59,10 +59,15 @@ ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure
 # The tail is needed to keep Docker Containers Runnig:
 # http://bigdatums.net/2017/11/07/how-to-keep-docker-containers-running/
 
-# Explanation about the flag used for BUILD & RUN the container
+# ⚡️ Explanation about the flag used for BUILD & RUN the container
 
 #1. Before build make change to VM setting: increase CPU count 1 to 2 && memory 5500 (Manually)
 #2. or We can change the virtual memory size with the --shm-size parameter, when we run the container-
 #3. to speed up the Slow Startup Time.
 #4. https://www.cyberciti.biz/tips/what-is-devshm-and-its-practical-usage.html
 #5. --privileged (flag) We need rights to write to the docker container file system, with privileged we get that result.
+
+### ⚡️ NOTES & TIPS:
+# If you doesn't add something like tail -f /dev/null as the last command, your GitLab will shut down. You need something to hang on your terminal.
+# And the last one tip. If you will see Whoops, GitLab is taking too much time to respond page, just wait and sometimes reload the page. 
+# It is absolutely normal. After 5-10 minutes you will get a ready Gitlab.
