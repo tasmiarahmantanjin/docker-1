@@ -13,7 +13,7 @@ Docker-1 project mainly consists of 3 different parts:
 
 ### ***How to install docker in school MAC***
 
-For the docker-1 project we are not allowed to use the MAC desktop environment insteed we need to use homebrew. below you can find the installation instruction step by step.
+For the docker-1 project we are not allowed to use the MAC desktop environment instead we need to use homebrew. below you can find the installation instruction step by step.
 
 1. First of all we need to install Homebrew on school's Mac:
 ```
@@ -29,7 +29,7 @@ mv .docker/ /goinfre/trahman
 ```
 4. Finally, creating a soft link to home directory:
 ```
-ln -s /goinfre/dmukaliy/.docker $HOME
+ln -s /goinfre/trahman/.docker $HOME
 ```
 5. Now we are ready to start the project!!!
 
@@ -44,4 +44,4 @@ ln -s /goinfre/dmukaliy/.docker $HOME
 ### ***Notes***
 
 	1. You can find details explanation about the exercises as a comment inside of the solution files.
-	2. You can find all usefull links and chectseet from resources directory.
+	2. You can find all useful links and cheatsheet from resources directory.
