@@ -71,3 +71,4 @@ ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure
 # If you doesn't add something like tail -f /dev/null as the last command, your GitLab will shut down. You need something to hang on your terminal.
 # And the last one tip. If you will see Whoops, GitLab is taking too much time to respond page, just wait and sometimes reload the page. 
 # It is absolutely normal. After 5-10 minutes you will get a ready Gitlab.
+
