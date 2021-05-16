@@ -34,7 +34,6 @@ ln -s /goinfre/trahman/.docker $HOME
 5. Now we are ready to start the project!!!
 
 ### ***Debug (if docker daemon is not running)***
-
 	1. If docker deamon is not connected
 	1. docker-machine regenerate-certs Char
 	2. eval $(docker-machine env Char)
@@ -42,6 +41,5 @@ ln -s /goinfre/trahman/.docker $HOME
 	4. It should be good.
 
 ### ***Notes***
-
 	1. You can find details explanation about the exercises as a comment inside of the solution files.
 	2. You can find all useful links and cheatsheet from resources directory.
