@@ -7,8 +7,8 @@
   1. Docker ps -a : check the containers
   2. docker images : check all the images
   3. docker run <image-id> <give container a name> -p port:port
-  4. docker commit <container-id> <image-name i want to give> :to create a image from a container
-  5. docker attach <container-name>   :If a docker container is running on detach name & you want to run that container
+  4. docker commit <CONTAINER_NAME> <image-name i want to give> :to create a image from a container
+  5. docker attach <CONTAINER_NAME>           :If a docker container is running on detach name & you want to run that container
   6. docker exec -it <CONTAINER_NAME> bash    :if i want to trigger onemore terminal in a running container
   7. docker port echo :to see what outside port is runnung on relation with internal port
   
