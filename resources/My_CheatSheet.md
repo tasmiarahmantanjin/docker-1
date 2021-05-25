@@ -1,7 +1,7 @@
 # All the Useful Docker Command RUN COMMANDS
   1. docker run -it(open integrated terminal of docker container) -d(run on background) -rm(remove container once it exited)
       ubuntu bash -c "sleep 3; echo all done"(Run the container and run the comands inside container)
-  2. docker run -it -rm -p 4678(hostport):45678(container_port) 45679:45679 --name echo-server ubuntu:bash
+  2. docker run -it -rm -p 4678(hostport):45678(container_port) -P 45679:45679 --name echo-server ubuntu:bash
 
 # BASIC COMMANDS FOR DOCKER WORKFLOW:
   1. Docker ps -a : check the containers
@@ -11,6 +11,7 @@
   5. docker attach <CONTAINER_NAME>           :If a docker container is running on detach name & you want to run that container
   6. docker exec -it <CONTAINER_NAME> bash    :if i want to trigger onemore terminal in a running container
   7. docker port echo :to see what outside port is runnung on relation with internal port
+  8. systemctl restart <CONTAINER-ID>
   
  ### NETWORKING COMMAND
   1. docker network ls
@@ -28,4 +29,3 @@
       2. docker run -it -v /shared_data ubuntu bash :caontainer name in Test1: Command will creare a folder name shared:data
       3. docker run -it --volume-from Test1 ubuntu bash : this command will take shared_data folder from Test1 container
       
-### 
