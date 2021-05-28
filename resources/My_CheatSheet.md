@@ -31,3 +31,4 @@
       
 ### DOCKER COMPOSE
     1. docker compose up
+    2. docker compose -d <container-name> up
