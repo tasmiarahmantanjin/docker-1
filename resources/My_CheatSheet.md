@@ -2,6 +2,7 @@
     1. docker run -it(open integrated terminal of docker container) -d(run on background) -rm(remove container once it exited)
       ubuntu bash -c "sleep 3; echo all done"(Run the container and run the comands inside container)
     2. docker run -it -rm -p 4678(hostport):45678(container_port) -P 45679:45679 --name echo-server ubuntu:bash
+    3. docker exec -it <CONATINER_NAME> bash
 
 # BASIC COMMANDS FOR DOCKER WORKFLOW:
     1. Docker ps -a : check the containers
