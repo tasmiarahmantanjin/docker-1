@@ -33,3 +33,8 @@
 ### DOCKER COMPOSE
     1. docker compose up
     2. docker compose -d <container-name> up
+
+### PUSH A DOCKER IMAGE TO DOCKER HUB
+    1. docker -t <image-name> build .
+    2. docker tag <image-you-want-to-push> trahmanhive/image-you-want-to-push
+    3. docker push <new-image-build-by-tag>
